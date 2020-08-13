@@ -1,0 +1,20 @@
+fieldset {
+    font-family: verdana;
+    border:1px solid black;
+    cursor: url(../../cursor/Vox_Cursor.png),auto;
+    }
+
+
+input {
+    border:2px solid black;
+font-family: verdana;
+     color:black; text-align:center;
+     cursor: url(../../cursor/Vox_Cursor.png),auto;
+     }
+
+div {
+    font-family: verdana;
+    background-color: blue;
+     margin-top:9%; 
+     cursor: url(../../cursor/Vox_Cursor.png),auto;
+     }

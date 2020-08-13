@@ -1,0 +1,482 @@
+<script>
+//check errors
+window.onerror = function() {
+   window.location.href = "KP.html";
+};
+
+</script>
+<font face="verdana">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body scrolling="no" id="body" onload="startup()">
+	<html id="grad1">
+	
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="IEview">
+		<div>
+			<img  src="Icons/C.png" onclick="IEClose()"  title="Close"  style="background-color:red; height:20px; width: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;" />
+			<hr style="border:none">
+		</div>
+		<iframe width="100.09%" 
+		 id="iframe" sandbox="allow-scripts  allow-same-origin allow-pointer-lock allow-modals allow-forms" style="border : none;background-color:white;"  src="Apps/Secure_Web/SecureWeb.html" height="93%"></iframe>
+	</dialog>
+
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="Tview">
+		<img  src="Icons/C.png" onclick="TClose()" title="Close" class="far fa-times-circle" style="background-color:red;height:20px; width: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;"/>
+		<br>
+		<button class="btn" onclick="toolsindex()">Tools list</button>
+		<iframe width="100.09%" src="Apps/Tools/Tools.html" sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-modals allow-forms"
+		 id="Tif" style="border : none;background-color:white;" height="91%"></iframe>
+	</dialog>
+
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="Mview">
+
+		<img  src="Icons/C.png" onclick="MClose()" title="Close" class="far fa-times-circle" style="background-color:red; height:20px; width: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;"/>
+
+		<br>
+
+		<button class="btn" onclick="mindex()">Music list</button>
+		<iframe sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts"  width="100.09%" src="Apps/Music/Music.html" id="Mif" style="border : none;background-color:white;" height="97%"></iframe>
+	</dialog>
+
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="DMview">
+
+		<img  src="Icons/C.png" onclick="DMClose()" title="Close" class="far fa-times-circle" style="background-color:red; width:20px;height: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;"/>
+
+		<br>
+
+		<button class="btn" onclick="dmindex()">Developer tools list</button>
+		<iframe  width="100.09%" src="Apps/Developer_Tools/DeveloperTools.html" id="dmif" style="border : none;background-color:white;" height="97%"></iframe>
+	</dialog>
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="Vview">
+
+		<img  src="Icons/C.png" onclick="VClose()" title="Close" class="far fa-times-circle" style="background-color:red; height:20px;width: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;"/>
+
+		<br>
+
+
+		<button class="btn" onclick="videoindex()">Video list</button>
+		<iframe  sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts" width="100.09%" src="Apps/Videos/Video.html" id="Vif" style="border : none;background-color:white;" height="97%"></iframe>
+	</dialog>
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="Gview">
+
+		<img  src="Icons/C.png" onclick="GClose()" title="Close" class="far fa-times-circle" style="background-color:red; width:20px;height: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:1px; margin-bottom:3px; float:right;"/>
+
+		<br>
+
+		<button class="btn" onclick="gameindex()">Games list</button>
+		<iframe  sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts"  width="100.09%" src="Apps/Games/Games.html" id="Gif" style="border : none;background-color:white;" height="97%"></iframe>
+	</dialog>
+
+	<dialog class="toptask" style="width : 97%; height : 88.5%;" id="Aview">
+		<img  src="Icons/C.png" onclick="AVClose()" title="Close" class="far fa-times-circle" style="background-color:red; width:20px;height: 20px; border-color:red; border-style:solid; border-width:7px 20px; margin-top:5px; margin-left:95%;"/>
+		<iframe src="Apps/About_Vox/AboutVox.html" style="border:none;background-color:blue;" width="100%" height="95%"></iframe>
+	</dialog>
+
+
+
+
+	<div id="SDview">
+		Power
+		<hr style="border-color:black;">
+		<button onclick="SD()" class="SD">Shutdown <img  src="Icons/S.png" style="width:15px;height:15px;" class="fas fa-power-off"/></button>
+		<button class="fff" disabled style="background-color:blue;color:blue; border:none;">000</button>
+		<button class="SLP" onclick="PC()">Cancel</button>
+		<button class="fff" disabled style="background-color:blue;color:blue; border:none;">000</button>
+		<button class="RS" onclick="RS()">Restart <img  src="Icons/R.png" style="width:15px;height:15px;"class="fas fa-sync-alt"/></button>
+	</div>
+
+
+
+	<iframe frameborder="0" width="0%" height="0%" id="a"></iframe>
+
+
+
+	<table width="100%" style="text-align : center; font-family: 'Allerta Stencil';" height="80%">
+		<tr>
+		</tr>
+		<tr>
+			<td><img  src="Icons/M.png" onclick="MOpen()" style="width:150px;height : 150px;" class="fas fa-music"/>
+				<p style="color:white;">Music</p>
+			</td>
+			<td>
+				<img  src="Icons/ER.png" onclick="location.reload( true )" style="width: 150px;height:150px;" class="fab fa-rev"/>
+				<p style="color:white;">Emergency Restart</p>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><img  src="Icons/V.png" onclick="VOpen()" style="width:150px;height : 150px;" class="fas fa-video"/>
+				<p style="color:white;">Videos</p>
+			</td>
+			<td><img onclick="IEOpen()" style="width : 150px;height:150px;" src="Icons/SW.png" />
+				<p style="color:white;">Secure Web</p>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+				<img  src="Icons/DT.png" onclick="DMOpen()" style="width:150px;height : 150px;" class="fas fa-laptop-code"/>
+				<p style="color:white;">Developer Tools</p>
+			</td>
+			<td><img  src="Icons/G.png" onclick="GOpen()" style="width:150px; height: 150px;" class="fas fa-gamepad"/>
+				<p style="color:white;">Games</p>
+			</td>
+			<td></td>
+		</tr>
+	</table>
+	<iframe frameborder="0" height="0" width="0" id="fra"></iframe>
+
+
+
+	<div style="width : 100%; height : 5%;border-top: 1px solid black;" class="taskbar">
+
+		<div onclick="openNav()" style="border-right: 1px solid black;width : 12%; height : 100%; float:left;" : class="start">
+			<p class="word">START</p>
+		</div><img  src="Icons/ER.png" title="Emergency Restart" onclick="location.reload( true )" ></i>
+
+		<div onclick="openTNav()" class="start" style="border-left: 1px solid black;width : 12%; height : 100%;float:right;">
+
+			<p class="word" id="time">HH:MM:SS</p>
+
+		</div>
+	</div>
+<style>
+body{ cursor: url(cursor/Vox_Cursor.png ), auto;margin:0;padding:0; }
+.slider {
+	cursor: url(cursor/Vox_Cursor.png ), auto;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: blue;
+  outline: none;
+  opacity: 0.8;
+  border:1px solid black;
+  border-radius:15px;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;cursor: url(cursor/Vox_Cursor.png ), auto;
+}
+
+.slider::-webkit-slider-thumb {cursor: url(cursor/Vox_Cursor.png ), auto;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: blue;
+    border:1px solid black;
+  border-radius:15px;}
+
+</style>
+
+	<div id="mySidenav" class="sidenav">
+		<a class="closebtn" onclick="closeNav()">&times</a>
+		<a onclick="PW()">Power <img  src="Icons/P.png" style="width:25px;height:25px;"/></a>
+		<a onclick="AVOpen()">About Vox <img  src="Icons/I.png" style="width:25px;height:25px;"/></a>
+		<a onclick="TOpen()">Tools <img  src="Icons/T.png" style="width:25px;height:25px;"/></a>
+		<a>Light:<spam id="volume%"> 50%</spam><input type="range" onchange="volcha( value )" max="100" value="50" class="slider" id="volume"></input></a>
+	</div>
+
+
+<script>
+// brightness
+function volcha( value ){
+a = value * 2 + 20;
+b=a / 2 -10;
+document.getElementById("volume%").innerHTML = b+"%";
+  document.getElementById("grad1").style.filter = "brightness("+a+"%)";
+  
+}
+</script>
+
+	<div id="myTimenav">
+
+		<i class="closebtn" onclick="closeTNav()">&times</i>
+		<a>Year: <i id="dateY">YYYY</i></a>
+		<br>
+		<a>Month: <i id="dateM">MM</i></a>
+		<br>
+		<a>Week: <i id="dateW">WW</i></a>
+		<br>
+		<a>Day: <i id="dateD">DD</i></a>
+	</div>
+
+	<style>
+		.SD {
+			border: none;
+			background-color: red;
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+			margin-left: 5px;
+		}
+
+		.SLP {
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+			border: none;
+			background-color: orange;
+		}
+
+		.RS {
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+			border: none;
+			background-color: green;
+		}
+
+		.fff {
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+		}
+
+		#stuff {
+			width: 10%;
+			margin-bottom: 10px;cursor: url(cursor/Vox_Cursor.png ), auto;
+		}
+
+		#myTimenav {
+position:absolute;
+right:0%;
+bottom:5%;
+			width: 0%;
+
+			height: 0%;
+cursor: url(cursor/Vox_Cursor.png ), auto;
+
+			z-index: 1;
+			background-image: linear-gradient(to right, black, blue, blue);
+			overflow-x: hidden;
+			transition: .5s;
+			padding-top: 60px;
+		}
+
+		#myTimenav a {cursor: url(cursor/Vox_Cursor.png ), auto;
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 18px;
+			color: black;
+			display: block;
+		}
+
+		.closebtn {cursor: url(cursor/Vox_Cursor.png ), auto;
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+			transition: .5s;
+		}
+
+		.closebtn:hover {cursor: url(cursor/Vox_Cursor.png ), auto;
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+			color: white;
+			transition: .5s;
+		}
+
+
+		#SDview {cursor: url(cursor/Vox_Cursor.png ), auto;
+			border: 5px solid blue;
+			border-radius: 5px;
+			background-color: blue;
+			text-align: center;
+			display:none;
+		}
+             font{font-size:17px;}
+		#grad1 {
+			width:100%;
+			height:100%;
+			  overflow: hidden;
+		font-size:17px;
+			padding:0px;margin:0;
+			background-image: url(Wallpaper/WP.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			 -webkit-user-select: none;
+			font-family: verdana;
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+		}
+
+		.taskbar {cursor: url(cursor/Vox_Cursor.png ), auto;
+		position:absolute;
+			background-image: linear-gradient(to right, black, blue, blue, red);
+	bottom:0px;
+			border: none;
+		}
+
+		.toptask {cursor: url(cursor/Vox_Cursor.png ), auto;
+			background-color: blue;
+			border: none;
+			padding:0;
+display:none;
+
+			width: 100%;
+			height: 100%;
+		}
+
+		.start {cursor: url(cursor/Vox_Cursor.png ), auto;
+			background-image: linear-gradient(to bottom, green, blue);
+			width: 17.1%;
+			
+			text-align: center;
+		}
+
+		.start:hover {
+			background-image: linear-gradient(to top, green, blue);
+		}
+
+		.word {cursor: url(cursor/Vox_Cursor.png ), auto;
+			margin-top: 4%;
+			color: white;
+		}
+
+		table,
+		th,
+		td {cursor: url(cursor/Vox_Cursor.png ), auto;
+			border: none;font-family: verdana;font-size:17px;
+		}
+
+		#view {
+			background-color: black;
+			border: none;cursor: url(cursor/Vox_Cursor.png ), auto;
+		}
+
+
+		.sidenav {
+			position:absolute;
+			bottom:5%;
+		
+cursor: url(cursor/Vox_Cursor.png ), auto;
+			width: 0%;
+
+			height: 0%;
+
+			z-index: 1;
+			
+			background-image: linear-gradient(to right, black, blue, blue);
+			overflow-x: hidden;
+			transition: .5s;
+			padding-top: 60px;
+		}
+
+		.sidenav a {cursor: url(cursor/Vox_Cursor.png ), auto;
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 18px;
+			color: black;
+			display: block;
+			transition: 1s;
+		}
+
+		.sidenav a:hover {cursor: url(cursor/Vox_Cursor.png ), auto;
+			color: white;
+		}
+
+		.sidenav .closebtn {cursor: url(cursor/Vox_Cursor.png ), auto;
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.sidenav {
+				padding-top: 15px;
+			}
+			.sidenav a {
+				font-size: 18px;
+			}
+		}
+
+		.btn {
+			border: 1px solid white;
+			background-color: black;
+			color: white;
+			cursor: url(cursor/Vox_Cursor.png ), auto;
+		}
+
+
+
+
+.overlay {
+background-image: linear-gradient(to bottom left, blue, green);cursor: url(cursor/Vox_Cursor.png ), auto;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  cursor:none;
+  overflow-y: hidden;
+  transition: 3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  cursor: url(cursor/Vox_Cursor.png ), auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {cursor: url(cursor/Vox_Cursor.png ), auto;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 50px;
+  color: red;
+  display: block;
+}
+
+
+
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+	</style>
+
+<div id="mySNav" class="overlay">
+  <div class="overlay-content">
+    <a>Vox OS</a>
+    <a style="color:black;font-size:20px;">Starting up</a>
+  </div>
+</div>
+
+<script src="jquery-1.12.4.js"></script>
+	<script src="jquery-ui.js"></script>
+
+	<script>
+		//draggable windows
+	$( function() {
+		$( ".toptask" ).draggable();$( "#SDview" ).draggable();
+		$( ".toptask" ).resizable();$( "#SDview" ).resizable();
+	} );
+	</script>
+<script>
+function closeSNav() {
+  document.getElementById("mySNav").style.height = "0%";
+}
+</script>
+
+	<script src="Checktime.js"></script>
+	<script src="Navigation.js"></script>
+	<script src="Power.js"></script>
+	<script src="Apps/About_Vox/AV.js"></script>
+	<script src="Apps/Developer_Tools/DT.js"></script>
+	<script src="Apps/Tools/T.js"></script>
+	<script src="Apps/Secure_Web/SW.js"></script>
+	<script src="Apps/Games/G.js"></script>
+	<script src="Apps/Videos/V.js"></script>
+	<script src="Apps/Music/M.js"></script>

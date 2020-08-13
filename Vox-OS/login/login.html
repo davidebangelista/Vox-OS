@@ -1,0 +1,51 @@
+<script src="start/Apps/About_Vox/Info/SysInfo.js"></script>
+
+
+<link rel="stylesheet" href="L.css">  
+   <div style="display:none;" id="sdview" >
+Shutdown?
+<hr>
+would you like to shutdown your device?
+<br>
+<br>
+<button onclick="sdyes()" class="btnyes">Yes</button><button disabled class="disa">000</button><button    class="btnno"  onclick="sdno()">NO</button>
+   </div>
+
+    <div style="display:none;" id="invview" >
+      <h3>ERROR!</h3>
+      <hr>
+Password is invalid.
+<br>
+<br>
+<button onclick="okbtn()" class="invok">ok</button>
+   </div>
+ 
+<num-pad id="pasd" onyes="go()" style="height:100%;user-select:none;bottom:-58%;position:absolute;width:100%;left:0;" pad-id="lh"></num-pad>
+<iframe allowfullscreen sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-modals allow-forms" scrolling="NO" frameborder="0" width="0" id="fra"></iframe>
+ 
+   <img class="img" src="Icon.png" >
+
+ <div style="margin-top:2%;text-align:center;display:block;font-family:verdana;" id="user">0000</div>
+
+ <html id="grad1">
+
+ 
+
+
+
+
+
+
+
+<script src="L.js"></script>
+<body scrolling="no" onload="Startup()">
+
+ <div class="menu">
+          <div class="border-bottom:4px solid black;">TOOLS</div>
+            <div onclick="sd()" class="menu-item">Shutdown</div>
+        </div>
+    
+
+
+
+<script src="Num-Pad.js"></script>
