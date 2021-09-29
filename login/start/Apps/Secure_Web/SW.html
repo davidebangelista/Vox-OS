@@ -1,0 +1,166 @@
+ <link rel="stylesheet"  href="SW.css">
+ <script src="SW.js"></script>
+
+<body id="bdy"><meta>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+margin-bottom:4px;
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: white;
+  display:inline-block;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: black;
+  color:white;
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  border: none;
+  outline: none;
+
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: green;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+
+
+  border-top: none;
+  height:auto;
+  width:auto;
+}
+</style>
+
+<center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '1')">Tab 1</button>
+    <button class="tablinks" onclick="openCity(event, '2')">Tab 2</button>
+      <button class="tablinks" onclick="openCity(event, '3')">Tab 3</button>
+        <button class="tablinks" onclick="openCity(event, '4')">SB Tab 4</button>
+          <button class="tablinks" onclick="openCity(event, '5')">SB & UR Tab 5</button>
+
+</div>
+</center>
+
+<div id="1" class="tabcontent">
+ 
+  <button class="btn" onclick="home1()">Home</button><button onclick="proxy1()">Use proxy</button>
+<select id="http/s1" class="btn">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+
+<input class="btn" type="url" autocomplete="off"  required id="search1"></input>
+
+<button class="btn" onclick="search1()">Search</button>
+
+<iframe width="100%" id="iframe1" style="border : none;" src="https://bing.com"height="90%"></iframe>
+
+</div>
+
+<div id="2" class="tabcontent">
+
+
+  <button class="btn" onclick="home2()">Home</button><button onclick="proxy2()">Use proxy</button>
+<select id="http/s2" class="btn">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+
+<input class="btn" type="url" autocomplete="off"  required id="search2"></input>
+
+<button class="btn" onclick="search2()">Search</button>
+
+<iframe width="100%" id="iframe2" style="border : none;" src="https://bing.com"height="90%"></iframe>
+
+</div>
+
+<div id="3" class="tabcontent">
+ 
+   <button class="btn" onclick="home3()">Home</button><button onclick="proxy3()">Use proxy</button>
+<select id="http/s3" class="btn">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+
+<input class="btn" type="url" autocomplete="off"  required id="search3"></input>
+
+<button class="btn" onclick="search3()">Search</button>
+
+<iframe width="100%" id="iframe3" style="border : none;" src="https://bing.com"height="90%"></iframe>
+ 
+</div>
+
+
+<div id="4" class="tabcontent">
+
+  <button class="btn" onclick="home4()">Home</button><button onclick="proxy4()">Use proxy</button>
+<select id="http/s4" class="btn">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+
+<input class="btn" type="url" autocomplete="off"  required id="search4"></input>
+
+<button class="btn" onclick="search4()">Search</button>
+<iframe sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts" width="100%" id="iframe4" style="border : none;" src="https://bing.com"height="90%"></iframe>
+
+</div>
+
+<div id="5" class="tabcontent">
+ 
+ 
+  <button class="btn" onclick="home5()">Home</button><button onclick="proxy5()">Use proxy</button>
+<select id="http/s5" class="btn">
+<option value="https://">https://</option>
+<option value="http://">http://</option>
+</select>
+
+<input class="btn" type="url" autocomplete="off"  required id="search5"></input>
+
+<button class="btn" onclick="search5()">Search</button>
+
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<script src="https://niutech.github.io/x-frame-bypass/x-frame-bypass.js" type="module"></script>
+
+<iframe is="x-frame-bypass" id="iframe5" width="100%" style="border : none;" src="https://bing.com"height="90%"></iframe>
+ 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+    </body>
+
+    <script src="SW.js"></script>

@@ -1,0 +1,15 @@
+ select, input, button{
+       cursor: url( ../../cursor/Vox_Cursor.png ), auto;
+      border:2px solid white;
+background-color:black;
+      color:white;
+    }
+    
+    
+     body{
+      cursor: url( ../../cursor/Vox_Cursor.png ), auto;
+      background-color:black;
+     }
+     option{
+            cursor: url( ../../cursor/Vox_Cursor.png ), auto;
+     }

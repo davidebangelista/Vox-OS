@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="C.css">
+<html>
+<head>
+
+
+<div width="100%" height="10%">
+  <button class="tablinks" onclick="openCity(event, 'HTML')">HTML</button>
+  <button class="tablinks" onclick="openCity(event, 'OPL')">RUN</button>
+    <button onclick="CreateFile()">Save</button><input id="name"></input> <select class="tablinks"  id="exe"><option value=".html"> .html (HTML File)</option> <option value=".hta"> .hta (HTML Application File)</option></select>
+</div>
+
+<div id="HTML" class="tabcontent"> 
+ <textarea id="html" placeholder="HTML" ></textarea>
+</div>
+
+<div id="OPL" class="tabcontent"> 
+ <button class="tablinks" onclick="RUNL()">Run desktop view</button>
+ <button id="button" class="tablinks" onclick="RUNP()">Run Phone view</button>
+ 
+  <iframe height="0" id="iframe" width="0"/></iframe>
+</div>
+
+</div>
+
+
+
+<script src="C.js">
+</script>

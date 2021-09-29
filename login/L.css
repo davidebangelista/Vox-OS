@@ -1,0 +1,117 @@
+#user {
+
+  font-size: 390%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width:25%;
+  
+   border : 2px solid black; 
+
+   margin-left : auto;
+    margin-right : auto;
+
+   margin-top : 2.5%;}
+#grad1 {
+  background-image: linear-gradient(to bottom left,blue, green);
+   cursor: url( start/cursor/Vox_Cursor.png ), auto;
+   margin: 0;
+}
+body { margin: 0; }
+.p {
+  background-color: blue;
+  background-repeat: no-repeat;
+color : white;
+  border-color : black;
+   cursor: url( start/cursor/Vox_Cursor.png ), auto;
+
+}
+
+.b {
+  background-color: white;
+color : black;
+  border-color : black;
+   cursor: url( start/cursor/Vox_Cursor.png ), auto;
+
+}
+.img {
+ cursor: url( start/cursor/Vox_Cursor.png ), auto;
+width : 10%;
+
+margin-left : 45%;
+
+margin-top : 15%;
+
+   border:2px solid black;
+}
+
+            .menu
+            {
+                width: 150px;
+                cursor: url( start/cursor/Vox_Cursor.png ), auto;
+                border-style: solid;
+                border-width: 1px;
+                border-color: black;
+                border-radius: 2px;
+                text-align:center;
+                position: fixed;
+                display: none;
+            }
+            .menu-item
+            {
+               cursor: url( start/cursor/Vox_Cursor.png ), auto;
+                height: 20px;
+              background-color:white;
+            }
+            .menu-item:hover
+            {
+                background-color: #6CB5FF;
+            }
+
+         #sdview {
+           border:5px solid blue;
+           border-radius:5px;
+           background-color:blue;
+           text-align:center;
+         }
+
+         hr {
+           border-color:black;
+         }
+
+            .btnyes{
+       cursor: url( start/cursor/Vox_Cursor.png ), auto;
+            border:none;
+            background-color:green;
+
+            margin-left:5px;
+          }
+
+          .btnno{
+             cursor: url( start/cursor/Vox_Cursor.png ), auto;
+            border:none;
+            background-color:red;
+          }
+          .disa {background-color:blue;
+          color:blue; 
+          border:none; 
+          cursor: url( start/cursor/Vox_Cursor.png ), auto;}
+
+          #invview {
+            z-index: 1;
+            border:none;
+            width:100%;height: 100%;
+            padding: 0;
+            background-image: linear-gradient(to bottom left,orange, red);
+            text-align:center;
+          }
+.invok {
+  background-color:white;
+  border:1px solid black;
+  cursor: url( start/cursor/Vox_Cursor.png ), auto;
+  }
+
