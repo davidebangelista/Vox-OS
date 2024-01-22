@@ -5,7 +5,7 @@ VoxOS is a virtual environment to evade extensions and network filtering on scho
 
 # Installation and Use
 
-Just download the zip and use the index.html to start and load the system.
+Just download the zip and use the index.html to start and load the system. If prompted for a password, use `0000000`.
 
 ## Features
 
