@@ -14,6 +14,6 @@
 
  /* Not obtained by About Vox */
 
- var Pass = "2663680";
+ var Pass = "0000000";
 
  var max = "7";
